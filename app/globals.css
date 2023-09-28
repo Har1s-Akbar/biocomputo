@@ -94,9 +94,10 @@
 
 .swiper-slide img {
   display: block;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 40rem;
   object-fit: cover;
+  background-position: center;
 }
 
 .autoplay-progress {

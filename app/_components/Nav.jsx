@@ -17,7 +17,7 @@ import Link from 'next/link'
 
 function Nav() {
   return (
-    <main className='w-full border-y-2 py-3 mt-10 shadow-md border-2 flex items-center justify-center'>
+    <main className='w-full border-y-2 py-3 mt-10 bg-white shadow-md border-2 flex items-center justify-center'>
         <NavigationMenu>
           <NavigationMenuList>
               <NavigationMenuItem className='hover:bg-secondary text-teal-700 transition duration-300 delay-300 ease-in-out py-2 px-4 rounded'>

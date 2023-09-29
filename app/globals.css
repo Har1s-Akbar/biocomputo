@@ -129,3 +129,34 @@
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+
+.glow {
+  /* box-shadow: #ADD8E6 0 1px 50px 0px; */
+  /* margin-inline: 0.5px; */
+  box-shadow: inset 0px 0px 4px 0px #ADD8E6;
+}
+
+.custom-shadow{
+  box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.24);
+-webkit-box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.24);
+-moz-box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.24);
+}
+.custom-shadow-card{
+  box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.24);
+-webkit-box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.24);
+-moz-box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.24);
+}
+
+.custom-clip{
+  clip-path: polygon(75% 0%, 85% 54%, 75% 100%, 0% 100%, 7% 49%, 0% 0%);
+}
+.custom-clip-second{
+  clip-path: polygon(83% 0, 75% 50%, 82% 100%, 25% 100%, 15% 45%, 25% 0%);
+}
+
+.transform{
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+}

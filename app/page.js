@@ -1,10 +1,12 @@
-import { Nav, Cover } from "./_components"
+import { Nav, Cover, Companies, About } from "./_components"
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-gray-50">
       <Nav/>
       <Cover/>
+      <Companies/>
+      <About/>
     </main>
   )
 }

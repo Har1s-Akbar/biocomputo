@@ -6,7 +6,7 @@ function About() {
   return (
     <main className="bg-white w-full lg:pt-16">
         <div className="bg-white rounded-lg lg:grid h-full lg:grid-cols-2 lg:px-5 lg:items-start justify-center custom-shadow mx-auto lg:w-10/12">
-            <div> 
+            <div>
                 <Image src={control_panel} width={500} height={500} alt='about' />
             </div>
             <div className=" flex flex-col items-center justify-center mt-5">

@@ -1,4 +1,4 @@
-import { Nav, Cover, Companies, About, Cards, Workflow, Qualities, Services } from "./_components"
+import { Nav, Cover, Companies, About, Cards, Workflow, Qualities, Services, Questions } from "./_components"
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
         <Qualities/>
         <Services/>
       </div>
+      <Questions/>
     </main>
   )
 }

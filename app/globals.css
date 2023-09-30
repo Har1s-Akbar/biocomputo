@@ -148,10 +148,10 @@
 }
 
 .custom-clip{
-  clip-path: polygon(75% 0%, 85% 54%, 75% 100%, 0% 100%, 7% 49%, 0% 0%);
+  clip-path: polygon(75% 0, 90% 50%, 75% 100%, 5% 100%, 15% 50%, 5% 0);
 }
 .custom-clip-second{
-  clip-path: polygon(83% 0, 75% 50%, 82% 100%, 25% 100%, 15% 45%, 25% 0%);
+  clip-path: polygon(85% 0, 75% 50%, 85% 100%, 15% 100%, 0% 50%, 15% 0);
 }
 
 .transform{
@@ -160,3 +160,7 @@
   -o-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+/* 
+.image-crop{
+  object-fit:cover;
+} */

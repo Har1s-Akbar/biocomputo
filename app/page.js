@@ -1,4 +1,4 @@
-import { Nav, Cover, Companies, About, Cards, Workflow } from "./_components"
+import { Nav, Cover, Companies, About, Cards, Workflow, Qualities, Services } from "./_components"
 
 export default function Home() {
   return (
@@ -11,6 +11,10 @@ export default function Home() {
         <Cards/>
       </div>
       <Workflow/>
+      <div className="bg-white py-10">
+        <Qualities/>
+        <Services/>
+      </div>
     </main>
   )
 }

@@ -12,6 +12,7 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
+        'sm': '200px',
         'md': '640px',
         'lg': '1024px',
         'lgx': '1280px',
@@ -19,7 +20,7 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        'custom': '10rem minmax(50px, 1fr) 50pxpx',
+        'custom': '10rem minmax(50px, 1fr) 50px',
       },
       colors: {
         border: "hsl(var(--border))",

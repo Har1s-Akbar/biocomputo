@@ -147,20 +147,7 @@
 -moz-box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.24);
 }
 
-.custom-clip{
-  clip-path: polygon(75% 0, 90% 50%, 75% 100%, 5% 100%, 15% 50%, 5% 0);
+.footer{
+  background: rgb(231,177,27);
+background: linear-gradient(45deg, rgba(231,177,27,1) 0%, rgba(167,63,214,1) 100%);
 }
-.custom-clip-second{
-  clip-path: polygon(85% 0, 75% 50%, 85% 100%, 15% 100%, 0% 50%, 15% 0);
-}
-
-.transform{
-  -webkit-transform: scaleX(-1);
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-/* 
-.image-crop{
-  object-fit:cover;
-} */

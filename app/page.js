@@ -1,4 +1,4 @@
-import { Nav, Cover, Companies, About, Cards, Workflow, Qualities, Services, Questions } from "./_components"
+import { Nav, Cover, Companies, About, Cards, Workflow, Qualities, Services, Questions, Contact, FooterComp } from "./_components"
 
 export default function Home() {
   return (
@@ -16,6 +16,10 @@ export default function Home() {
         <Services/>
       </div>
       <Questions/>
+      <div className="bg-white pt-10">
+        <Contact/>
+        <FooterComp/>
+      </div>
     </main>
   )
 }

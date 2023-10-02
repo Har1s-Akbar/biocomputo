@@ -20,12 +20,12 @@ function Questions({data}) {
         </div>
         <div className={data.length<2 === true? "grid grid-cols-1 lg:flex items-center justify-center gap-y-10 justify-items-center w-5/12 m-auto":"grid grid-cols-1 lg:grid-cols-2 gap-y-10 justify-items-center w-11/12 m-auto"}>
             {data.map((item)=>{
-                return <div className="flex flex-col w-11/12 md:w-full">
+                return <div key={item._id} className="flex flex-col w-11/12 md:w-full">
                     <h1 className="text-2xl text-blue-600 my-2">{item.title}</h1>
                     <p className="leading-6 w-11/12 opacity-80">{item.content}</p>
                     <div className="flex flex-col my-3 w-11/12 mx-auto lg:w-full">
                         {item.ponits.map((point)=>{
-                           return <ul className="list">
+                           return <ul key={point._id} className="list">
                                 <li className="mx-4 my-2 opacity-80">{point}</li>
                             </ul>
                         })}

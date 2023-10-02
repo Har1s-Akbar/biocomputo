@@ -37,7 +37,7 @@ function Slider({data}) {
       >
           {data[0].image.map((images)=>{
           return  <SwiperSlide>
-                    <Image style={{objectFit:'cover'}} src={urlFor(images).url()} alt='img' width={1000} height={500} />
+                    <Image style={{objectFit:'cover'}} key={images._id} src={urlFor(images).url()} alt='img' width={1000} height={500} />
           </SwiperSlide>
           })}
         <div className="autoplay-progress" slot="container-end">

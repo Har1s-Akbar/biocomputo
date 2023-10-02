@@ -19,14 +19,14 @@ function Contact() {
             <h1 className="text-3xl font-medium text-blue-600 my-10">Contact Us</h1>
         </div>
         <div className="grid lg:grid-cols-[40rem_minmax(18rem,_4fr)_18rem] md:w-11/12 gap-10">
-            <Card className='flex flex-col w-full custom-shadow items-center justify-center py-3'>
+            <Card className='flex flex-col bg-gray-50 w-full custom-shadow items-center justify-center py-3'>
                 <Image src="https://img.icons8.com/ios-filled/50/C850F2/marker.png" alt="place-marker" width={40} height={40}/>
                 <CardHeader className='flex flex-col items-center justify-center'>
                     <CardTitle className='opacity-70 my-2'>Our Address</CardTitle>
                     <CardDescription className='my-2'>Karāchi, Sindh, Pakistan,</CardDescription>
                 </CardHeader>
             </Card>
-            <Card className='flex flex-col w-full custom-shadow items-center justify-center py-3'>
+            <Card className='flex flex-col w-full bg-gray-50 custom-shadow items-center justify-center py-3'>
                 <Image src="https://img.icons8.com/pastel-glyph/64/C850F2/new-post--v1.png" alt="new-post--v1" width={40} height={40}/>
                 <CardHeader className='flex flex-col items-center justify-center'>
                     <CardTitle className='opacity-70 my-2'>Email Us</CardTitle>
@@ -36,7 +36,7 @@ function Contact() {
                     </div>
                 </CardHeader>
             </Card>
-            <Card className='flex flex-col w-full custom-shadow items-center justify-center py-3'>
+            <Card className='flex flex-col w-full custom-shadow bg-gray-50 items-center justify-center py-3'>
                 <Image src="https://img.icons8.com/ios-filled/50/C850F2/phone.png" alt="phone" width={40} height={40}/>
                 <CardHeader className='flex flex-col items-center justify-center'>
                     <CardTitle className='opacity-70 my-2'>Call Us</CardTitle>
@@ -48,9 +48,7 @@ function Contact() {
                 </CardHeader>
             </Card>
         </div>
-        <div className="w-11/12 lg:px-12">
             <FormComp/>
-        </div>
     </main>
   )
 }

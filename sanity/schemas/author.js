@@ -1,14 +1,51 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'author',
-  title: 'Author',
+  name: 'services',
+  title: 'Services',
   type: 'document',
   fields: [
     defineField({
       name: 'name',
       title: 'Name',
       type: 'string',
+    }),
+    defineField({
+      name: 'position',
+      title: 'Position',
+      type: 'string',
+    }),
+    defineField({
+      title: 'Twiiter',
+      name: 'twitter',
+      type: 'url',
+      validation: Rule => Rule.uri({
+        scheme: ['http', 'https']
+      })
+    }),
+    defineField({
+      title: 'Facebook',
+      name: 'facebook',
+      type: 'url',
+      validation: Rule => Rule.uri({
+        scheme: ['http', 'https']
+      })
+    }),
+    defineField({
+      title: 'Instagram',
+      name: 'instagram',
+      type: 'url',
+      validation: Rule => Rule.uri({
+        scheme: ['http', 'https']
+      })
+    }),
+    defineField({
+      title: 'LinkedIn',
+      name: 'linkedin',
+      type: 'url',
+      validation: Rule => Rule.uri({
+        scheme: ['http', 'https']
+      })
     }),
     defineField({
       name: 'slug',
@@ -27,19 +64,19 @@ export default defineType({
         hotspot: true,
       },
     }),
-    defineField({
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-        },
-      ],
-    }),
+    // defineField({
+    //   name: 'bio',
+    //   title: 'Bio',
+    //   type: 'array',
+    //   of: [
+    //     {
+    //       title: 'Block',
+    //       type: 'block',
+    //       styles: [{title: 'Normal', value: 'normal'}],
+    //       lists: [],
+    //     },
+    //   ],
+    // }),
   ],
   preview: {
     select: {

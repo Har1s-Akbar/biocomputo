@@ -6,10 +6,10 @@ function Services() {
   return (
     <main className="my-10 mt-20 flex flex-col items-center justify-center">
         <div className="flex items-center justify-center flex-col">
-            <h1 className="text-3xl font-semibold text-blue-600 my-5">Our Services</h1>
-            <p className="text-">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+            <h1 className="text-3xl text-center font-semibold text-blue-600 my-5">Our Services</h1>
+            <p className="text-center md:w-11/12">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
         </div>
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-5">
             <div className="flex flex-col relative my-5 items-center justify-center">
                 <div className="w-9/12">
                     <Image src='https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1856&q=80' width={300} height={300} className="rounded" alt='image'/>

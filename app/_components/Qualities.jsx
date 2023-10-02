@@ -6,9 +6,9 @@ function Qualities() {
   return (
     <main className="flex items-center flex-col justify-center">
         <div className="mb-5">
-            <h1 className="text-3xl font-semibold text-blue-600 my-5">WHY CHOOSE BIOCOMPUTOMICS</h1>
+            <h1 className="text-3xl font-semibold text-blue-600 text-center my-5">WHY CHOOSE BIOCOMPUTOMICS</h1>
         </div>
-        <div className="grid grid-cols-3 justify-items-center w-10/12 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center w-10/12 gap-10 md:grid-cols-2">
             <div className="flex flex-col items-center justify-center">
                 <Image className="p-2 border shadow-lg bg-gray-50 rounded-full hover:bg-blue-700 hover:bg-gray-200 delay-200 duration-200" src="https://img.icons8.com/carbon-copy/100/best-seller.png" alt="best-seller" width={70} height={70}/>    
                 <h1 className="text-blue-600 text-xl my-3 font-medium">High Quality Output</h1>

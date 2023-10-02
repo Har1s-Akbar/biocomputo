@@ -12,7 +12,7 @@ import {
 
 function Cards() {
   return (
-    <main className="lg:w-10/12 mx-auto my-20 h-full custom-shadow-card rounded-lg grid lg:grid-cols-3">
+    <main className="lg:w-10/12 mx-auto my-20 w-9/12 h-full custom-shadow-card rounded-lg grid lg:grid-cols-3 md:grid-cols-2 md:w-11/12">
         <Card className='glow'>
             <CardHeader>
                 <CardTitle className='mt-5'>

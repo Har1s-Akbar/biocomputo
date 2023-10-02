@@ -18,7 +18,7 @@ function Contact() {
         <div className="flex items-center justify-center">
             <h1 className="text-3xl font-medium text-blue-600 my-10">Contact Us</h1>
         </div>
-        <div className="grid grid-cols-[40rem_minmax(18rem,_4fr)_18rem] gap-10">
+        <div className="grid lg:grid-cols-[40rem_minmax(18rem,_4fr)_18rem] md:w-11/12 gap-10">
             <Card className='flex flex-col w-full custom-shadow items-center justify-center py-3'>
                 <Image src="https://img.icons8.com/ios-filled/50/C850F2/marker.png" alt="place-marker" width={40} height={40}/>
                 <CardHeader className='flex flex-col items-center justify-center'>
@@ -48,7 +48,7 @@ function Contact() {
                 </CardHeader>
             </Card>
         </div>
-        <div className="w-11/12 px-12">
+        <div className="w-11/12 lg:px-12">
             <FormComp/>
         </div>
     </main>

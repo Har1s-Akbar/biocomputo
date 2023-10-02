@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button"
 
 function FooterComp() {
     return (
-      <main className="footer px-16 py-20">
-        <div className="grid grid-cols-[23rem_minmax(3rem,_1fr)_20rem_30rem] w-full justify-items-center grid-cols-4">
-          <div className="flex flex-col items-start justify-start">
+      <main className="footer lg:px-16 py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-[23rem_minmax(3rem,_1fr)_20rem_30rem] lg:w-full w-10/12 mx-auto gap-5 justify-items-center grid-cols-1">
+          <div className="flex flex-col items-start justify-start justify-self-start">
               <div className="mb-5">
                   <p className="text-white text-sm mb-1">Biocomputomic</p>
                   <p className="text-white text-sm mb-1">Pakistan</p>

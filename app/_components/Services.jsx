@@ -39,6 +39,8 @@ function Services({data}) {
         }
     }
 
+    useEffect(()=>{getGrid()},[data])
+
   return (
     <motion.main
         initial={'start'}

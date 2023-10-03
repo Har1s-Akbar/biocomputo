@@ -42,7 +42,7 @@ function Cards({data}) {
       }
   }
 
-  useEffect(()=> getGrid, [data])
+  useEffect(()=> {getGrid}, [data])
 
   return (
     <motion.main

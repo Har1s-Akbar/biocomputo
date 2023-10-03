@@ -1,14 +1,31 @@
+'use client'
 import Image from "next/image"
 import { urlFor } from "../_lib/sanity"
+import { motion } from "framer-motion"
+
+const animate={
+    start:{
+        
+    },
+    end:{
+
+    }
+}
 
 function About({data}) {
   return (
-    <main className=" w-full lg:pt-16">
-        <div className="bg-gray-50 rounded-lg lg:grid lg:grid-cols-2 lg:px-5 lg:items-start justify-center custom-shadow mx-auto md:w-11/12 lg:w-10/12 md:pb-3">
-            <div>
+    <motion.main
+    initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{type: 'spring', bounce:0.3}}
+    viewport={{once:true, amount:0.7}}
+    className=" w-full lg:pt-16">
+        <motion.div
+        className="bg-gray-50 rounded-lg lg:grid lg:grid-cols-2 lg:px-5 lg:items-start justify-center custom-shadow mx-auto md:w-11/12 lg:w-10/12 md:pb-3">
+            <motion.div>
                 <Image src={urlFor(data[0].image).url()} width={500} height={500} className="mx-auto" alt='about' />
-            </div>
-            <div className=" flex flex-col items-center justify-center mt-5">
+            </motion.div>
+            <motion.div className=" flex flex-col items-center justify-center mt-5">
                 <h1 className="text-3xl font-medium text-blue-600 my-5">About Us</h1>
                 <p className="italic opacity-70 w-9/12 mx-auto lg:w-full md:w-11/12">{data[0].content}</p>
                 <div className="mt-10 flex flex-col w-9/12 md:w-11/12 m-auto">
@@ -22,9 +39,9 @@ function About({data}) {
                     </div>
                     })}
                 </div>
-            </div>
-        </div>
-    </main>
+            </motion.div>
+        </motion.div>
+    </motion.main>
   )
 }
 

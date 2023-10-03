@@ -23,8 +23,8 @@ function Services({data}) {
             <p className="text-center md:w-11/12">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
         </div>
         <div className={data.length<4 === true? "grid grid-cols-1 md:flex lg:flex items-end justify-center gap-10 lg:gap-5":"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-5"}>
-            {data.map((item)=>{
-            return<div key={item._id} className="flex flex-col relative my-5 items-center justify-center">
+            {data.map((item, index)=>{
+            return<div key={index} className="flex flex-col relative my-5 items-center justify-center">
                 <div className="w-9/12">
                     <Image src={urlFor(item.image).url()} width={300} height={300} className="rounded" alt='image'/>
                 </div>

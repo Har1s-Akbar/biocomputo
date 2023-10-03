@@ -27,7 +27,7 @@ function Cards({data}) {
   return (
     <main className={grid<3 === true? "lg:w-8/12 bg-gray-100 mx-auto my-20 w-9/12 h-full rounded-lg grid lg:flex justify-center items-center justify-center md:w-11/12":"lg:w-10/12 mx-auto my-20 w-9/12 h-full rounded-lg grid lg:grid-cols-3 md:grid-cols-2 bg-gray-100 md:w-11/12" }>
         {data.map((item, index)=>{
-          return <Card className='glow bg-gray-50'>
+          return <Card key={index} className='glow bg-gray-50'>
             <CardHeader>
                 <CardTitle className='mt-5'>
                     <p className="font-normal text-blue-500">0{index + 1}</p>

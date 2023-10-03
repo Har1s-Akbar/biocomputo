@@ -12,7 +12,7 @@ function Questions({data}) {
         }
     }
 
-    useEffect(()=> {getGrid()},[])
+    useEffect(()=> {getGrid()},[data, getGrid])
 
     const parentAnimate={
         start:{

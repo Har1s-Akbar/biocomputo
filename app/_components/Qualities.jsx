@@ -38,7 +38,7 @@ function Qualities({data}) {
         }
     }
   
-    useEffect(()=> {getGrid}, [data])  
+    useEffect(()=> {getGrid}, [data, getGrid])  
 
   return (
     <motion.main

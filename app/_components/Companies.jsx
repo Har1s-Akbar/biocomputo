@@ -18,8 +18,9 @@ function Companies({data, index}) {
   return (
     <motion.main
     className="lg:py-10 grid lg:grid-cols-6 grid-cols-2 py-5 gap-5 lg:w-10/12 mx-auto justify-items-center">
-      {data[0].icons.map((icon)=>{
+      {data[0].icons.map((icon, index)=>{
           return <motion.div 
+          key={index}
           initial="start"
           transition={{staggerChildren:1}}
           viewport={{once: true, amount:0.4}}

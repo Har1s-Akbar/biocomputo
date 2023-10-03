@@ -14,7 +14,7 @@ import FormComp from "./FormComp"
 
 function Contact() {
   return (
-    <main className="flex flex-col items-center justify-center mb-10">
+    <main className="flex flex-col items-center justify-center mb-10" id="contact">
         <div className="flex items-center justify-center">
             <h1 className="text-3xl font-medium text-blue-600 my-10">Contact Us</h1>
         </div>

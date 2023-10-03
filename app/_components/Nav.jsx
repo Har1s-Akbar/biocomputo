@@ -17,56 +17,56 @@ function Nav() {
         <NavigationMenu>
           <NavigationMenuList>
               <NavigationMenuItem className='hover:bg-secondary text-teal-700 transition duration-300 delay-300 ease-in-out py-2 px-4 rounded'>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="#home" legacyBehavior passHref>
                   <NavigationMenuLink>
                     Home
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem className='hover:bg-secondary transition duration-300 text-teal-700 delay-300 ease-in-out py-2 px-4 rounded'>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="#about" legacyBehavior passHref>
                   <NavigationMenuLink>
                     About
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem className='hover:bg-secondary transition duration-300 text-teal-700 delay-300 ease-in-out py-2 px-4 rounded'>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="#card" legacyBehavior passHref>
                   <NavigationMenuLink>
                     Genomics
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem className='hover:bg-secondary transition duration-300 text-teal-700 delay-300 ease-in-out py-2 px-4 rounded'>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="#card" legacyBehavior passHref>
                   <NavigationMenuLink>
                     Biocomputomic
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem className='hover:bg-secondary transition duration-300 text-teal-700 delay-300 ease-in-out py-2 px-4 rounded'>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="#card" legacyBehavior passHref>
                   <NavigationMenuLink>
                     Matagenomics
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem className='hover:bg-secondary transition duration-300 text-teal-700 delay-300 ease-in-out py-2 px-4 rounded'>
-                <Link href="/" legacyBehavior passHref>
+                <Link href="#card" legacyBehavior passHref>
                   <NavigationMenuLink>
                     Protemics
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem className='hover:bg-secondary transition duration-300 text-teal-700 delay-300 ease-in-out py-2 px-4 rounded'>
-              <Link href="/" legacyBehavior passHref>
+              <Link href="#card" legacyBehavior passHref>
                   <NavigationMenuLink>
                     Technical writing
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem className='hover:bg-secondary transition duration-300 text-teal-700 delay-300 ease-in-out py-2 px-4 rounded'>
-              <Link href="/" legacyBehavior passHref>
+              <Link href="#contact" legacyBehavior passHref>
                   <NavigationMenuLink>
                     Contact
                   </NavigationMenuLink>

@@ -12,7 +12,6 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { urlFor } from '../_lib/sanity';
 
 function Slider({data}) {
-  console.log(data.map((item)=>{return item}))
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
@@ -20,7 +19,7 @@ function Slider({data}) {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <main className='lg:h-full'>
+    <main id='home' className='lg:h-full'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

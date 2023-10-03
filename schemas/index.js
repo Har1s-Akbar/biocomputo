@@ -4,7 +4,7 @@ import post from './post'
 import author from './author'
 import about from './about'
 import card from './card'
-import Qualities from './Qualities'
+import Qualities from './qualities'
 import questions from './questions'
 
-export const schemaTypes = [post, author, category, blockContent, about, card, Qualities, questions]
+export const schemaTypes = [post, author, blockContent, about, card, Qualities, questions]

@@ -22,10 +22,10 @@ const parentAnimate={
 
 const CardAnimate={
   start:{
-    x:2000
+    y:500,
 },
 end:{
-    x:0,
+    y:0,
     transition:{type:'spring', bounce:0.2, ease:'linear', stiffness:50, velocity:1, mass:0.5}
 }
 }

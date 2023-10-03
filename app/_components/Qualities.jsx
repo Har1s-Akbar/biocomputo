@@ -17,12 +17,10 @@ const parentAnimate={
 
 const childAnimate={
   start:{
-    opacity:0,
-    rotate:10
+    y:500,
 },
 end:{
-    opacity:1,
-    rotate:0,
+    y:0,
     transition:{type:'spring', bounce:0.2, ease:'linear', stiffness:50, velocity:1, mass:0.5}
 }
 }

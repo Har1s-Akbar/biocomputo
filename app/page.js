@@ -60,7 +60,7 @@ export default async function Home() {
       <div className="lg:hidden block top-0 sticky z-10"><NavMob/></div>
       <Cover data={coverData}/>
       <Companies data={coverData}/>
-      <div className="bg-[#F7F7F7] py-10 overflow-hidden">
+      <div className="bg-[#F7F7F7] py-10">
         <About data={aboutData}/>
         <Cards data={cardData}/>
       </div>

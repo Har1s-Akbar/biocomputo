@@ -17,10 +17,12 @@ const parentAnimate={
 
 const childAnimate={
   start:{
-    y:200,
+    y:500,
+    opacity:0,
 },
 end:{
     y:0,
+    opacity:1,
     transition:{type:'spring', bounce:0.2, ease:'linear', stiffness:50, velocity:1, mass:0.5}
 }
 }
@@ -40,12 +42,13 @@ function Qualities({data}) {
 
   return (
     <motion.main
-        initial={'start'}
-        whileInView={'end'}
-        viewport={{once:true, amount:1}}
-        variants={parentAnimate}
-        transition={{staggerChildren:0.1}}
-    className="flex items-center flex-col justify-center overflow-x-hidden">
+    
+    initial={'start'}
+    whileInView={'end'}
+    viewport={{once:true, amount:0.3}}
+    variants={parentAnimate}
+    transition={{staggerChildren:0.5}}
+    className="flex items-center flex-col justify-center">
         <div className="mb-5">
             <h1 className="text-3xl font-semibold text-blue-600 text-center my-5">WHY CHOOSE BIOCOMPUTOMICS</h1>
         </div>

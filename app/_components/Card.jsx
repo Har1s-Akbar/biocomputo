@@ -22,13 +22,16 @@ const parentAnimate={
 
 const CardAnimate={
   start:{
-    y:200,
+    opacity:0,
+    y:500    
 },
-end:{
-    y:0,
-    transition:{type:'spring', bounce:0.2, ease:'linear', stiffness:50, velocity:1, mass:0.5}
+    end:{
+        opacity:1,
+        y:0,
+        transition:{type:'spring', bounce:0.2, ease:'linear', stiffness:50, velocity:1, mass:0.5}
+    }
 }
-}
+
 
 function Cards({data}) {
 
@@ -49,9 +52,9 @@ function Cards({data}) {
     id="card"
     initial={'start'}
     whileInView={'end'}
-    viewport={{once:true, amount:1}}
+    viewport={{once:true, amount:0.3}}
     variants={parentAnimate}
-    transition={{staggerChildren:0.1}}
+    transition={{staggerChildren:0.5}}
     className={grid<3 === true? "lg:w-8/12 bg-gray-100 mx-auto my-20 w-9/12 h-full rounded-lg grid lg:flex justify-center items-center justify-center md:w-11/12":"lg:w-10/12 mx-auto my-20 w-9/12 h-full rounded-lg grid lg:grid-cols-3 md:grid-cols-2 bg-gray-100 md:w-11/12" }>
         {data.map((item, index)=>{
           return <motion.div key={index} variants={CardAnimate}>

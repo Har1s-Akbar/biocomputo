@@ -51,7 +51,7 @@ function Cards({data}) {
     whileInView={'end'}
     viewport={{once:true, amount:1}}
     variants={parentAnimate}
-    transition={{staggerChildren:0.5}}
+    transition={{staggerChildren:0.1}}
     className={grid<3 === true? "lg:w-8/12 bg-gray-100 mx-auto my-20 w-9/12 h-full rounded-lg grid lg:flex justify-center items-center justify-center md:w-11/12":"lg:w-10/12 mx-auto my-20 w-9/12 h-full rounded-lg grid lg:grid-cols-3 md:grid-cols-2 bg-gray-100 md:w-11/12" }>
         {data.map((item, index)=>{
           return <motion.div key={index} variants={CardAnimate}>

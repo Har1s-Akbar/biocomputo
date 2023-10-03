@@ -20,28 +20,28 @@ function NavMob() {
             <Image src="https://img.icons8.com/ios-glyphs/30/menu--v3.png" alt="menu--v3" width={30} height={30}/>
           </DialogTrigger>
           <DialogContent className='w-10/12 m-aut'>
-            <Link href='/'>
+            <Link href='#home'>
               Home
             </Link>
-            <Link href='/'>
+            <Link href='#about'>
               About
             </Link>
-            <Link href='/'>
+            <Link href='#card'>
               Genomics
             </Link>
-            <Link href='/'>
+            <Link href='#card'>
               Biocomputo
             </Link>
-            <Link href='/'>
+            <Link href='#card'>
               Metagenomics
             </Link>
-            <Link href='/'>
+            <Link href='#card'>
               Proteomics
             </Link>
-            <Link href='/'>
+            <Link href='#card'>
               Technical Writing
             </Link>
-            <Link href='/'>
+            <Link href='#contact'>
               Contact
             </Link>
           </DialogContent>

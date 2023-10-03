@@ -42,7 +42,7 @@ function Questions({data}) {
         <motion.div 
         initial={'start'}
         whileInView={'end'}
-        viewport={{once:true, amount:1}}
+        viewport={{once:true, amount:0.3}}
         variants={parentAnimate}
         transition={{staggerChildren:0.5}}
         className={data.length<2 === true? "grid grid-cols-1 lg:flex items-center justify-center gap-y-10 justify-items-center w-5/12 m-auto":"grid grid-cols-1 lg:grid-cols-2 gap-y-10 justify-items-center w-11/12 m-auto"}>

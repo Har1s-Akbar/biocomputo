@@ -31,7 +31,7 @@ function About({data}) {
     initial={"start"}
     whileInView={"end"}
     transition={{staggerChildren:0.4}}
-    viewport={{once:true, amount:0.7}}
+    viewport={{once:true, amount:0.6}}
     className="w-full lg:pt-16">
         <motion.div
         className="bg-gray-50 rounded-lg lg:grid lg:grid-cols-2 lg:px-5 lg:items-start justify-center custom-shadow mx-auto md:w-11/12 lg:w-10/12 md:pb-3">

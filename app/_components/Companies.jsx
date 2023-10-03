@@ -23,7 +23,7 @@ function Companies({data, index}) {
           key={index}
           initial="start"
           transition={{staggerChildren:1}}
-          viewport={{once: true, amount:0.4}}
+          viewport={{once: true, amount:0.1}}
           whileInView="end"
           variants={variants}>
             <Image width={50} key={index} height={50} src={urlFor(icon).url()} alt="medium-logo"/>

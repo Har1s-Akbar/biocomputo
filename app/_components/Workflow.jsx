@@ -14,7 +14,7 @@ function Workflow() {
         initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{duration:1}}
-        viewport={{once:true, amount:0.5}}
+        viewport={{once:true, amount:0.1}}
         className='w-11/12'>
             <Image src={diag} className='mx-auto' height={300} width={1100} alt='diag'/>
         </motion.div>

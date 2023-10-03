@@ -54,10 +54,10 @@ export default async function Home() {
 
   return (
     <main className="bg-[#FFF0F0] ">
-      <div className='sticky top-0 z-10'>
+      <div className='sticky hidden lg:block top-0 z-10'>
         <Nav />
       </div>
-      <div className="lg:hidden block"><NavMob/></div>
+      <div className="lg:hidden block top-0 sticky z-10"><NavMob/></div>
       <Cover data={coverData}/>
       <Companies data={coverData}/>
       <div className="bg-[#F7F7F7] py-10 overflow-hidden">

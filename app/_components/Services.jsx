@@ -45,7 +45,7 @@ function Services({data}) {
     <motion.main
         initial={'start'}
         whileInView={'end'}
-        viewport={{once:true, amount:1}}
+        viewport={{once:true, amount:0.3}}
         variants={parentAnimate}
         transition={{staggerChildren:0.5}}
     className="my-10 mt-20 flex flex-col items-center justify-center">

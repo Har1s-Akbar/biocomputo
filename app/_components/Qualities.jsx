@@ -46,7 +46,7 @@ function Qualities({data}) {
         whileInView={'end'}
         viewport={{once:true, amount:1}}
         variants={parentAnimate}
-        transition={{staggerChildren:0.5}}
+        transition={{staggerChildren:0.1}}
     className="flex items-center flex-col justify-center overflow-x-hidden">
         <div className="mb-5">
             <h1 className="text-3xl font-semibold text-blue-600 text-center my-5">WHY CHOOSE BIOCOMPUTOMICS</h1>

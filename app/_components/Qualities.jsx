@@ -17,7 +17,7 @@ const parentAnimate={
 
 const childAnimate={
   start:{
-    y:500,
+    y:200,
 },
 end:{
     y:0,

@@ -14,7 +14,7 @@ const animate={
 
 const divAnimate ={
     start:{
-        y:500,
+        y:200,
         opacity:0,
         },
         end:{

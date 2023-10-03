@@ -22,7 +22,7 @@ const parentAnimate={
 
 const CardAnimate={
   start:{
-    y:500,
+    y:200,
 },
 end:{
     y:0,

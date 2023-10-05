@@ -1,7 +1,8 @@
 import './globals.css'
-import { Inter, Comfortaa } from 'next/font/google'
+import { Inter, Comfortaa, Alex_Brush } from 'next/font/google'
 
-const inter = Comfortaa({ subsets: ['latin'] })
+const inter = Comfortaa({ subsets: ['latin'], weight:'400', variable:'--comfortaa' })
+const alex = Alex_Brush({subsets:['latin'], weight:'400', variable:'--alex' })
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${alex.variable}`}>{children}</body>
     </html>
   )
 }

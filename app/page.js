@@ -1,4 +1,4 @@
-import { Nav, Cover, Companies, About, Cards, Workflow, Qualities, Services, Questions, Contact, FooterComp, NavMob } from "./_components"
+import { Nav, Cover, Companies, About, Cards, Workflow, Qualities, Services, Questions, Contact, FooterComp, NavMob, Logo } from "./_components"
 import { client } from "./_lib/sanity"
 
 export const revalidate = 10
@@ -54,6 +54,9 @@ export default async function Home() {
 
   return (
     <main className="bg-[#FFF0F0] ">
+      <div className="bg-white hidden lg:block md:block hidden">
+        <Logo/>
+      </div>
       <div className='sticky hidden lg:block top-0 z-10'>
         <Nav />
       </div>

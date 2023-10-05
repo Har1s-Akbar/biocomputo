@@ -165,3 +165,9 @@ background: linear-gradient(45deg, rgba(231,177,27,1) 0%, rgba(167,63,214,1) 100
   color: blue;
   margin-inline:5px;
 }
+
+.text2 {
+  font-family: var(--alex);
+  font-weight: 400;
+  color: #000;
+}

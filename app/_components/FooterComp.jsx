@@ -1,11 +1,25 @@
 'use client'
 
 import Link from "next/link"
+import {useState} from 'react'
 import Image from "next/image"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
 function FooterComp() {
+  const [mail,setmail] = useState()
+
+  const submitBtn = async(e) =>{
+    e.preventDefault()
+    console.log(mail)
+    await fetch('/api/newsletter',{
+      method:'POST',
+      body: JSON.stringify({
+        mail
+      })
+    })
+  }
+
     return (
       <main className="footer lg:px-16 py-20">
         <div className="grid md:grid-cols-2 lg:grid-cols-[23rem_minmax(3rem,_1fr)_20rem_30rem] lg:w-full w-10/12 mx-auto gap-5 justify-items-center grid-cols-1">
@@ -91,8 +105,8 @@ function FooterComp() {
             <h1 className="text-base font-medium text-white">Our Newsletter</h1>
             <p className="text-sm text-white my-4 leading-6">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <div className="flex w-full">
-              <Input type='text' placeholder=''/>
-              <Button className='bg-blue-700'>Subscribe</Button>
+              <Input type='text' placeholder='' onChange={(e)=>{setmail(e.target.value)}}/>
+              <Button className='bg-blue-700' onClick={submitBtn}>Subscribe</Button>
             </div>
           </div>
         </div>
